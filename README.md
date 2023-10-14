@@ -18,6 +18,8 @@ for (var i = 0; i < 5; i++) {
 }
 
 ```
+Options:
+
 
 A. 🤨 0 1 2 3 4
 
@@ -114,8 +116,9 @@ In the realm of JavaScript, primitive data types are like the cool kids at the p
 
 
 
-## Question 5
-**What is the output of the following JavaScript code?**
+## 😄 Question 5: The Great Array Adventure
+
+**Get ready for an epic array adventure! What happens when arrays collide in JavaScript?** 🦸‍♂️
 
 ```javascript
 const a = [1, 2, 3];
@@ -124,28 +127,31 @@ const b = a;
 a.push(4);
 
 console.log(b);
+
 ```
 
-`A`. [1, 2, 3]
+Options:
 
-`B`. [1, 2, 3, 4]
+A. 🚁 [1, 2, 3]
 
-`C`. [4]
+B. 🚀 [1, 2, 3, 4]
 
-`D`. None of the above
+C. 🌪️ [4]
+
+D. 😇 None of the above
 
 <details>
 <summary>Answer</summary>
-The correct answer is option B. The output will be [1, 2, 3, 4].
+The correct answer is option B. It's a teamwork of arrays, and the result is [1, 2, 3, 4].
 </details>
 <details>
 <summary>Explanation</summary>
-In JavaScript, when you assign an array to another variable, you are creating a reference to the same array. So, when you modify `a` by pushing 4 into it, the array referred to by `b` is also modified, resulting in [1, 2, 3, 4].
+In the magical land of JavaScript, arrays have a special bond. When one changes, the other feels it too. When `a` adds a 4, `b` is there to celebrate the array growth. Teamwork makes the dream work! 🚀🌟
 </details>
 
-## Question 6
+## 😄 Question 6: The Whimsical Functions
 
-**What does the following JavaScript code do?**
+**Get ready for a whimsical adventure with JavaScript functions! Let's see how they play together. 🤹‍♂️**
 
 ```javascript
 function foo() {
@@ -157,26 +163,240 @@ function bar() {
 }
 
 console.log(foo());
+
 ```
-`A`. It returns the string "Hello, World!".
+Options:
 
-`B`. It throws a runtime error.
+A. 🎉 It returns the string "Hello, World!" and throws a mini celebration.
 
-`C`. It returns undefined.
+B. 😱 It throws a runtime error and the functions decide to have a tea party instead.
 
-`D`. It goes into an infinite loop.
+C. 😇 It returns undefined and quietly sips a cup of coffee.
+
+D. 🌀 It goes into an infinite loop and starts spinning around in code circles.
 
 <details>
 <summary>Answer</summary>
-The correct answer is option A. It returns the string "Hello, World!".
+The correct answer is option A. It's a party in JavaScript-land as it returns the string "Hello, World!" and celebrates with confetti!
 </details>
 <details>
 <summary>Explanation</summary>
-The `foo` function calls the `bar` function, which returns the string "Hello, World!". Therefore, the output of `foo()` is "Hello, World!".
+In this magical JavaScript world, `foo` invites `bar` for a chat. And guess what? They exchange greetings and "Hello, World!" is the life of the party! 🥳🎈
 </details>
 
+## 😄 Question 7: The Magical Promise
 
+**Enter the realm of JavaScript Promises, where the code is full of surprises!** 🌠
 
+```javascript
+function asyncTask(ms) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve(ms);
+    }, ms);
+  });
+}
+
+async function executeTasks() {
+  const tasks = [asyncTask(200), asyncTask(100), asyncTask(300)];
+  const results = await Promise.all(tasks);
+  return results;
+}
+
+executeTasks()
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+```
+Options:
+
+A. 🎉 [200, 100, 300]
+
+B. 😅 [100, 200, 300]
+
+C. 🤯 [300, 200, 100]
+
+D.  🌠 The order is not guaranteed; it depends on the execution time of promises.
+
+<details>
+<summary>Answer</summary>
+The correct answer is option D. It's a magical show, and the order is not guaranteed; it depends on the execution time of promises.
+</details>
+<details>
+<summary>Explanation</summary>
+In the world of asynchronous JavaScript, promises are like magic spells. The order of their execution depends on the promises' mood and how fast they can perform their tricks. It's all about timing! 🌠✨
+</details>
+
+## 😄 Question 8: The Scrambled Code
+
+**Time for some code detective work! Can you unravel this JavaScript mystery?** 🕵️‍♀️
+
+```javascript
+const mystery = () => {
+  return {
+    fun: () => {
+      return "JavaScript is awesome!";
+    },
+  };
+};
+
+console.log(mystery().fun());
+```
+Options:
+
+A. 🤯 "JavaScript is awesome!"
+
+B. 😄 It throws a confetti party!
+
+C. 🙈 "fun is not a function."
+
+D. 🚀 "undefined"
+
+<details>
+<summary>Answer</summary>
+The correct answer is option A. It's a pure celebration: "JavaScript is awesome!"
+</details>
+<details>
+<summary>Explanation</summary>
+In this code, there's a little mystery, but not a real one! The `mystery` function returns an object with a `fun` function inside, and that `fun` function is all about celebrating the awesomeness of JavaScript. 🎉😎
+</details>
+
+## 😄 Question 9: The Slippery Scope
+
+**Let's delve into the mysteries of scope in JavaScript! Can you predict the outcome?** 🔍
+
+```javascript
+let scopeVar = "global";
+
+function trickyScope() {
+  if (true) {
+    let scopeVar = "local";
+  }
+  return scopeVar;
+}
+
+console.log(trickyScope());
+```
+Options:
+
+A. 🌎 "global"
+
+B. 🤯 "local"
+
+C. 😅 "undefined"
+
+D. 🎉 "local" followed by a surprise party
+
+<details>
+<summary>Answer</summary>
+The correct answer is option A. It's "global" all the way in the world of JavaScript scope!
+</details>
+<details>
+<summary>Explanation</summary>
+In this tricky scenario, there's a global `scopeVar` and a local `scopeVar`. However, the local one doesn't affect the global one, and the function returns the global "scopeVar." No surprises this time! 🔍🎩🌐
+</details>
+
+## 😄 Question 10: The Enigmatic Callback
+
+**Get ready to decipher the world of JavaScript callbacks! Can you predict the outcome?** 🧩
+
+```javascript
+function performMagic(callback) {
+  setTimeout(function() {
+    callback("You've unlocked the callback magic!");
+  }, 1000);
+}
+
+performMagic(function(result) {
+  console.log(result);
+});
+```
+Options:
+
+A. 🧙 "You've unlocked the callback magic!"
+
+B. 🎉 "Magic is in the air!"
+
+C. 🤯 "Callback hell!"
+
+D. 😅 It throws a timeout error.
+
+<details>
+<summary>Answer</summary>
+The correct answer is option A. It's the sweet sound of success: "You've unlocked the callback magic!"
+</details>
+<details>
+<summary>Explanation</summary>
+In this enigmatic JavaScript scenario, the `performMagic` function uses a callback to reveal its magical message. After 1 second, the callback unlocks the magic and logs the message to the console. ✨🎩
+</details>
+
+## 😄 Question 11: The Arrow Mystery
+
+**Time to explore the mysteries of arrow functions in JavaScript! Are you up for the challenge?** 🏹
+
+```javascript
+const arrowFunction = () => {
+  return this;
+};
+
+function regularFunction() {
+  return this;
+}
+
+const mysteryObject = {
+  key1: arrowFunction(),
+  key2: regularFunction(),
+};
+
+console.log(mysteryObject.key1 === mysteryObject.key2);
+```
+Options:
+
+A. 😅 true
+
+B. 🤯 false
+
+C. 🏹 It throws a "this" party.
+
+D. 🎉 undefined
+
+<details>
+<summary>Answer</summary>
+The correct answer is option B. It's a mystery - `false` is the outcome!
+</details>
+<details>
+<summary>Explanation</summary>
+In the world of JavaScript, arrow functions and regular functions handle the `this` keyword differently. Arrow functions don't have their own `this` context, while regular functions do. In this mystery, they're not equal! 🤷‍♂️🔍🏹
+</details>
+
+## 😄 Question 12: The Infinity Conundrum
+
+**Time to tackle an infinity riddle in JavaScript! Are you ready for the challenge?** 🌌
+
+```javascript
+const infinityMath = Math.pow(2, 1023) * 2;
+
+const isInfinity = Number.isFinite(infinityMath);
+
+console.log(isInfinity);
+```
+Options:
+
+A. 🌌 false
+
+B. 🤯 true
+
+C. 😄 NaN
+
+D. 🚀 It creates a black hole in your console.
+
+<details>
+<summary>Answer</summary>
+The correct answer is option A. It's not a black hole; it's `false` because `infinityMath` is indeed `Infinity`.
+</details>
+<details>
+<summary>Explanation</summary>
+In this JavaScript universe, we're dealing with incredibly large numbers. `Number.isFinite` checks if a number is finite or not. Despite the large value, it's `Infinity`, which is not a finite number. No black holes here! 🪐🔭🌌
+</details>
 
 
 
