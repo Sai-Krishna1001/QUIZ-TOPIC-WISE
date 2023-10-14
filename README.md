@@ -398,9 +398,162 @@ The correct answer is option A. It's not a black hole; it's `false` because `inf
 In this JavaScript universe, we're dealing with incredibly large numbers. `Number.isFinite` checks if a number is finite or not. Despite the large value, it's `Infinity`, which is not a finite number. No black holes here! 🪐🔭🌌
 </details>
 
+## 😄 Question 13: The Array Alchemy
 
+**Get ready to perform some array alchemy in JavaScript, spiced up with funny emojis! Can you predict the outcome?** 🎩🍭
 
+```javascript
+const wizardSkills = ["🧙‍♂️", "✨", "🦄", "🔮"];
 
+const advancedSkills = wizardSkills.slice(2);
+
+advancedSkills.push("⏰");
+
+console.log(wizardSkills);
+```
+Options:
+
+A. 🔮 ["🧙‍♂️", "✨", "🦄", "🔮"]
+
+B. 🍭 ["🧙‍♂️", "✨", "🦄", "🔮", "⏰"]
+
+C. 😅 ["🦄", "🔮", "⏰"]
+
+D. 🎉 ["🔮", "⏰"]
+
+<details>
+<summary>Answer</summary>
+The correct answer is option A. The original array remains untouched: ["🧙‍♂️", "✨", "🦄", "🔮"].
+</details>
+<details>
+<summary>Explanation</summary>
+In this array alchemy spiced up with funny emojis, we create a new array `advancedSkills` by slicing a portion of `wizardSkills` and then push "⏰" into `advancedSkills`. However, this doesn't affect the original array. 🎩🍭📦
+</details>
+
+## 😄 Question 14: The Magic of Equality
+
+**It's time to unravel the mysteries of equality in JavaScript! Can you determine the outcome?** 🔍🔗
+
+```javascript
+const firstMagic = [1, 2, 3];
+const secondMagic = [1, 2, 3];
+
+const areTheyEqual = firstMagic == secondMagic;
+
+console.log(areTheyEqual);
+```
+Options:
+
+A. 🎩 true
+
+B. 🤯 false
+
+C. 🎉 It triggers a magic showdown.
+
+D. 😅 It throws a syntax error.
+
+<details>
+<summary>Answer</summary>
+The correct answer is option B. The magic of JavaScript equality is tricky - it's `false`!
+</details>
+<details>
+<summary>Explanation</summary>
+In the world of JavaScript, comparing two arrays with `==` checks if they reference the same object, not if their contents are the same. In this case, the arrays are different objects, so it's `false`. 🎩🔗📜
+</details>
+
+## 😄 Question 15: The Mysterious Spread
+
+**Get ready to dive into the mysteries of the JavaScript spread operator! Can you unveil its secrets?** 🌊✨
+
+```javascript
+const originalArray = [1, 2, 3];
+const mysteriousCopy = [...originalArray];
+
+mysteriousCopy.push(4);
+
+console.log(originalArray);
+```
+Options:
+
+A. 🌊 [1, 2, 3]
+
+B. 🤯 [1, 2, 3, 4]
+
+C. 😅 [4]
+
+D. 🎩 It creates a parallel universe in your console.
+
+<details>
+<summary>Answer</summary>
+The correct answer is option A. The original array remains unchanged: [1, 2, 3].
+</details>
+<details>
+<summary>Explanation</summary>
+In this JavaScript mystery, we make a copy of `originalArray` using the spread operator. When we push 4 into `mysteriousCopy`, the original array is unaffected. The spread operator creates a true copy. 🌊✨🔮
+</details>
+
+## 😄 Question 16: The Magical NaN
+
+**Let's delve into the world of NaN in JavaScript! Can you decipher its mystical properties?** 🧙‍♂️🔮
+
+```javascript
+const mystery1 = NaN;
+const mystery2 = 0 / 0;
+
+const areTheyEqual = mystery1 === mystery2;
+
+console.log(areTheyEqual);
+```
+Options:
+
+A. 🧙‍♂️ true
+
+B. 🤯 false
+
+C. 😅 NaN
+
+D. 🎩 It opens a portal to the unknown.
+
+<details>
+<summary>Answer</summary>
+The correct answer is option B. NaN is so mysterious that even when two NaN values are compared, it's `false`!
+</details>
+<details>
+<summary>Explanation</summary>
+In the realm of JavaScript, NaN (Not-a-Number) is indeed mysterious. When you compare two NaN values with `===`, it's always `false`. It's one of JavaScript's peculiarities. 🧙‍♂️🔮📜
+</details>
+
+## 😄 Question 17: The Fantastic Function
+
+**Get ready to explore the world of JavaScript functions! Can you anticipate the outcome of this magical function?** 🌟🔮
+
+```javascript
+function magicalFunction(a, b) {
+  return a + b;
+}
+
+const result = magicalFunction(3, "3");
+
+console.log(result);
+```
+Options:
+
+A. 🌟 6
+
+B. 🤯 33
+
+C. 😅 TypeError
+
+D. 🎩 undefined
+
+<details>
+<summary>Answer</summary>
+The correct answer is option B. JavaScript's loose typing leads to "33" because it converts the number to a string and performs string concatenation.
+</details>
+<details>
+<summary>Explanation</summary>
+JavaScript's dynamic typing allows it to implicitly convert the number to a string and perform string concatenation when you add a number and a string. In this case, "3" + 3 results in "33". 🌟🔮📜
+</details>
 
 
 
