@@ -54,7 +54,7 @@ D. 😅 `undefined` is a variable that has been declared but has not been assign
 
 <details>
 <summary>Answer</summary>
-The correct answer is option C. `null` plays the part of representing the intentional absence of any object value, while `undefined` is the variable that's just not quite sure what's going on.
+Both Option C and Option D are correct. `null` plays the part of representing the intentional absence of any object value, and `undefined` is the variable that's just not quite sure what's going on.
 </details>
 
 <details>
