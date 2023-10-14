@@ -1,6 +1,5 @@
-# QUIZ-TOPIC-WISE
 
-# JavaScript Quiz
+# JAVASCRIPT QUIZ
 
 ### Welcome to the JavaScript Quiz! Test your knowledge of JavaScript with these tricky questions. Check your answers and read the explanations to learn more.
 
@@ -17,12 +16,16 @@ for (var i = 0; i < 5; i++) {
 ```
 
 `A`. 0 1 2 3 4
+
 `B`. 5 5 5 5 5
+
 `C`. 1 2 3 4 5
+
 `D`. None of the above
+
 <details>
 <summary>Answer</summary>
-The output will be "5" printed five times.
+The correct answer is option 2. The output will be "5" printed five times.
 
 </details>
 <details>
@@ -36,8 +39,11 @@ This is a common mistake in JavaScript due to closures. In this code, a setTimeo
 **What is the difference between `null` and `undefined` in JavaScript?**
 
 `A`. `null` is a variable that has been declared but has not been assigned a value.
+
 `B`. `undefined` is a value that represents the intentional absence of any object value.
+
 `C`. `null` is a value that represents the intentional absence of any object value.
+
 `D`. `undefined` is a variable that has been declared but has not been assigned a value.
 
 <details>
@@ -56,8 +62,11 @@ The correct answer is option 3. `null` is a value that represents the intentiona
 **What is the purpose of the JavaScript `map` function in arrays?**
 
 `A`. To remove elements from an array.
+
 `B`. To add elements to the beginning of an array.
+
 `C`. To create a new array by applying a provided function to each element of an existing array.
+
 `D`. To find the maximum value in an array.
 
 <details>
@@ -75,10 +84,13 @@ The `map` function is a higher-order function in JavaScript that is commonly use
 
 **Which of the following is NOT a primitive data type in JavaScript?**
 
-A. String
-B. Object
-C. Boolean
-D. Undefined
+`A`. String
+
+`B`. Object
+
+`C`. Boolean
+
+`D`. Undefined
 
 <details>
 <summary>Answer</summary>
@@ -89,6 +101,73 @@ The answer is option 2, "Object." Objects are not primitive data types in JavaSc
 <summary>Explanation</summary>
 In JavaScript, primitive data types include String, Number, Boolean, Undefined, Null, and Symbol. Objects, on the other hand, are considered reference data types because they can hold multiple values and have properties and methods.
 </details>
+
+
+## Question 5
+**What is the output of the following JavaScript code?**
+
+```javascript
+const a = [1, 2, 3];
+const b = a;
+
+a.push(4);
+
+console.log(b);
+```
+
+`A`. [1, 2, 3]
+
+`B`. [1, 2, 3, 4]
+
+`C`. [4]
+
+`D`. None of the above
+
+<details>
+<summary>Answer</summary>
+The correct answer is option B. The output will be [1, 2, 3, 4].
+</details>
+<details>
+<summary>Explanation</summary>
+In JavaScript, when you assign an array to another variable, you are creating a reference to the same array. So, when you modify `a` by pushing 4 into it, the array referred to by `b` is also modified, resulting in [1, 2, 3, 4].
+</details>
+
+## Question 6
+
+**What does the following JavaScript code do?**
+
+```javascript
+function foo() {
+  return bar();
+}
+
+function bar() {
+  return "Hello, World!";
+}
+
+console.log(foo());
+```
+`A`. It returns the string "Hello, World!".
+
+`B`. It throws a runtime error.
+
+`C`. It returns undefined.
+
+`D`. It goes into an infinite loop.
+
+<details>
+<summary>Answer</summary>
+The correct answer is option A. It returns the string "Hello, World!".
+</details>
+<details>
+<summary>Explanation</summary>
+The `foo` function calls the `bar` function, which returns the string "Hello, World!". Therefore, the output of `foo()` is "Hello, World!".
+</details>
+
+
+
+
+
 
 
 
