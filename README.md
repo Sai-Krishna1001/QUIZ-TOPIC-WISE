@@ -777,3 +777,78 @@ The correct answer is option A. The output is "I am a JavaScript developer. 🚀
 In this whimsical challenge, we have a string `str` representing a JavaScript developer's description and an `emoji` symbolizing enthusiasm.
 The surprise function appends the emoji repeated three times to the end of the str. As a result, the output is "I am a JavaScript developer. 🚀🚀🚀". The repetition of the rocket emoji adds a playful touch to the message! 🌟🤪🚀
 </details>
+
+## 😄 Question 24: The Quirky Objects
+
+**Venture into the quirky world of JavaScript objects! Can you decipher the outcome of this peculiar object operation?** 🌟🤪
+
+```javascript
+const person = {
+  name: "Sai",
+  age: 22,
+};
+
+const anotherPerson = person;
+anotherPerson.name = "Krishna";
+
+function greet(guest) {
+  return `Hello, ${guest.name}! You're ${guest.age} years old.`;
+}
+
+const greeting = greet(person);
+console.log(greeting);
+```
+Options:
+
+A. 🌟 "Hello, Sai! You're 22 years old."
+
+B. 🤯 "Hello, Krishna! You're 22 years old."
+
+C. 😅 "Hello, Sai! You're 0 years old."
+
+D. 🎉 "Hello, Krishna! You're 0 years old."
+
+<details>
+<summary>Answer</summary>
+The correct answer is option B. The output is "Hello, Krishna! You're 22 years old." Changes made to `anotherPerson` affect the `person` object due to reference assignment.
+</details>
+<details>
+<summary>Explanation</summary>
+In this peculiar object operation, `anotherPerson` is assigned the same reference as `person`, so they refer to the same object. When `anotherPerson.name` is modified to "Krishna," it also changes `person.name` to "Krishna."
+As a result, the greet function greets "Krishna" with "Hello, Krishna! You're 22 years old." This showcases the nature of object references in JavaScript, with a playful twist! 🌟🤪😄
+</details>
+
+## 😄 Question 25: The Enigmatic Array
+
+**Embark on a perplexing journey into the world of enigmatic arrays! Can you decipher the outcome of this cryptic array manipulation?** 🌟🧩
+
+```javascript
+const magicalArray = [1, 2, 3, 4, 5];
+
+delete magicalArray[2];
+
+magicalArray[5] = 6;
+
+const result = magicalArray.reduce((acc, curr) => acc + curr, 0);
+
+console.log(result);
+```
+Options:
+
+A. 🌟 18
+
+B. 🤯 6
+
+C. 😅 15
+
+D. 🧩 10
+
+<details>
+<summary>Answer</summary>
+The correct answer is option A. The output is 18. The array `magicalArray` has missing values, and the `reduce` method calculates the sum of the remaining elements.
+</details>
+<details>
+<summary>Explanation</summary>
+In this cryptic array manipulation, the `delete` operator removes the element at index 2 (3), leaving an undefined space. Then, a new element with the value 6 is added at index 5, creating more undefined spaces.
+The reduce method sums the remaining elements (1, 2, 4, 5, and the newly added 6), resulting in an output of 18. This enigmatic array operation requires careful consideration of missing values! 🌟🧩😄
+</details>
